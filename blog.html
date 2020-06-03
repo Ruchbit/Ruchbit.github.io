@@ -6,27 +6,88 @@
 <!-- lang="en-GB" sets the pages language to be english-Great britain (Browser now knows) -->
 <html lang="en-GB">
 
- <!-- Gives the page a name that appears in tab, this is important to SEO. It will be considered towards keywords. This is the wording that will be seen on a search ranking. 60 Characters max, otherwise will not be formatted properly  -->
- <!-- It is normal for title tags to not be short and snappy, does not perform well for SEO. Thus 'Blog' Should be changed to ~'Richard Chen's Blog Posts' as more specific etc. -->
-<title> Richard Chen's Blog Posts </title>
+<!-- Metadata, specific info of page not shown to user. Techinical infor for SE, web browser. Notably title  & desciption -->
+<head>
+ 	<!-- Gives the page a name that appears in tab, this is important to SEO. It will be considered towards keywords. This is the wording that will be seen on a search ranking. 60 Characters max, otherwise will not be formatted properly  -->
+ 	<!-- It is normal for title tags to not be short and snappy, does not perform well for SEO. Thus 'Blog' Should be changed to ~'Richard Chen's Blog Posts' as more specific etc. -->
+	<title> Richard Chen's Blog Posts </title>
 
-
-<!-- <header> represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name, and other elements. -->
-<header>
+	<!-- ------------------------- -->
 	<!-- Meta data is the information about the information, this will be read by the browser. Will not be displayed on website. Usually contributes to the SEO, description of page that will be seen on SE  -->
+	<!-- ------------------------- -->
 
 	<!-- Character set, giving browser the encoding that will be used to digest website  -->
 	<meta charset="UTF-8">
 
 	<!-- name defines the meta's value/ what type of meta it is based on predetermined existing values. -->
 	<!-- Content is giving the meta name it's significance and value. Description. -->
+
 	<!-- Viewport= Users visible area of a page depending on device screen -->
 	<!-- Width=device-width gives browser instruction on how to control the page scaling and dimensions -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Very visible. Important to be readable and compelling within. 160 Characters. Lets user know exactly what the page is about (This is what will appear underneath title in SE. Can be emboldened by google if it matches the keywords searched. Include calls to action. The content is what will be showed. -->
+	<!-- Avoid duplicate descriptions -->
+	<meta name="description" content="Text"> 
+
+	<!-- <meta name="keywords" content="" No longer in use. Potentially crawlled by bots for ad systems but otherwise not used--> .
+	
+	<!-- This links the current page with another piece of code to then have it's relationship to be defined as a style sheet. Mostly used to link CSS styling -->
+	<!-- <link rel="stylesheet" type="text/css" href=""> can be typed too but seems unneccassary since type by default is "text/css"  -->
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+
+<!-- <header> represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name, and other elements. -->
+<header>
+
+	<!-- Simply defines a division in website. Usually coupled with ID/ Class to be styled via css. -->
+	<!-- Class attribute will give a classname(s) to an element. Corresponds to css styling, allowing one set of css to style many different parts of a website. Set class attribute to be"container"-->
+	<div class="container">
+
+		<!-- Set id attribute to be "branding". Value must be unqiue in HTML document. Allow css to target specific id. Reserved for one-off/ special areas -->
+		<div id="branding">
+
+			<!-- Webpage headline/title outlining page. Most SEO heavy heading. Similar to title advised ~65 Characters. Keyword considerate. Formatted differently. Google says it doesn't matter but SEO practise suggest 1 per page -->
+			<!-- span is like inline div. Allow separation of text within a line of code. Given attribute, it can be targeted by css & java to be styled etc. -->
+			<h2><span class="highlight"> Richard's </span> Profile</h2>
+		</div>
+
+		<!-- Special divider used to contain the major navigational links on website -->
+		<nav> 
+			<!-- Unordered (bulleted) list, coupled with list items -->
+			<u1>
+				<!-- a signifies a hyperlink. sends to another location. href= <URL> value.  -->
+				<li > <a href="index.html">Me</a></li>
+				<li > <a href="project.html">Projects</a></li>
+				<li class = "current"> <a href="blog.html">Blog</a></li>
+				<li >  <a href="contact.html">Contact</a></li>
+			</u1>
+
+		</nav>
+	</div>
 
 </header>
 
-<body>	<h1> TEST </h1>
+<!-- Element contains the main contents of HTML document. Headings, paragraphs, images, linkes , tables.  -->
+<body>
+
+	<!-- Content inside is grouped. Relates to a single theme. Div's don't have this conventional use restriction -->
+	<section id="introduction">
+		<div class = "container">
+			<h1>Latest blog posts</h1>
+			
+			<!-- Paragraph of text. Large amounts of text  -->
+			<p>Romania has very few animal welfare laws. The stray dog problem is beyond crisis point, and the public shelters are full. The shelters in Romania are not like those in the UK.  They are filthy and riddled with disease, the dog’s don’t receive enough food, puppies, old dogs and young adult dogs are all kennelled together.</p>
+		</div>
+	</section>
+	<section id="boxes">
+		<div class="container">
+			<div class="box">
+
+				<h2> TEST </h2>
+
+	</div>
 </body>
 
 </html>
