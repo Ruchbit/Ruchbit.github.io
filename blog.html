@@ -30,7 +30,7 @@
 	<!-- Avoid duplicate descriptions -->
 	<meta name="description" content="Text"> 
 
-	<!-- <meta name="keywords" content="" No longer in use. Potentially crawlled by bots for ad systems but otherwise not used--> .
+	<!-- <meta name="keywords" content="" No longer in use. Potentially crawlled by bots for ad systems but otherwise not used--> 
 	
 	<!-- This links the current page with another piece of code to then have it's relationship to be defined as a style sheet. Mostly used to link CSS styling -->
 	<!-- <link rel="stylesheet" type="text/css" href=""> can be typed too but seems unneccassary since type by default is "text/css"  -->
@@ -38,17 +38,22 @@
 </head>
 
 
-<!-- <header> represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name, and other elements. -->
+
+
+<!-- Element contains the main contents of HTML document. Headings, paragraphs, images, linkes , tables.  -->
+<body>
+
+	<!-- <header> represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name, and other elements. -->
 <header>
 
 	<!-- Simply defines a division in website. Usually coupled with ID/ Class to be styled via css. -->
 	<!-- Class attribute will give a classname(s) to an element. Corresponds to css styling, allowing one set of css to style many different parts of a website. Set class attribute to be"container"-->
 	<div class="container">
 
-		<!-- Set id attribute to be "branding". Value must be unqiue in HTML document. Allow css to target specific id. Reserved for one-off/ special areas -->
+		<!-- Set id attribute to be "branding". Value must be unqiue in HTML document. Allow css to target specific id. Reserved for one-off/ special areas  -->
 		<div id="branding">
 
-			<!-- Webpage headline/title outlining page. Most SEO heavy heading. Similar to title advised ~65 Characters. Keyword considerate. Formatted differently. Google says it doesn't matter but SEO practise suggest 1 per page -->
+			
 			<!-- span is like inline div. Allow separation of text within a line of code. Given attribute, it can be targeted by css & java to be styled etc. -->
 			<h2><span class="highlight"> Richard's </span> Profile</h2>
 		</div>
@@ -67,27 +72,48 @@
 		</nav>
 	</div>
 
-</header>
+</header> 
 
-<!-- Element contains the main contents of HTML document. Headings, paragraphs, images, linkes , tables.  -->
-<body>
 
 	<!-- Content inside is grouped. Relates to a single theme. Div's don't have this conventional use restriction -->
-	<section id="introduction">
+<section id="introduction">
 		<div class = "container">
+			<!-- Webpage headline/title outlining page. Most SEO heavy heading. Similar to title advised ~65 Characters. Keyword considerate. Formatted differently. Google says it doesn't matter but SEO practise suggest 1 per page -->
 			<h1>Latest blog posts</h1>
 			
 			<!-- Paragraph of text. Large amounts of text  -->
 			<p>Romania has very few animal welfare laws. The stray dog problem is beyond crisis point, and the public shelters are full. The shelters in Romania are not like those in the UK.  They are filthy and riddled with disease, the dog’s don’t receive enough food, puppies, old dogs and young adult dogs are all kennelled together.</p>
 		</div>
-	</section>
-	<section id="boxes">
+</section>
+
+
+
+<section id="boxes">
 		<div class="container">
 			<div class="box">
 
 				<h2> TEST </h2>
 
-	</div>
+
+<section id="contact">
+		<div class = "container">
+			<h2>Contact me</h2>
+			<form>
+				<input type="email" value="Enter Email...">
+				<button type = "submit" class="button_1">Contact</button>
+			</form>
+
+</section>
+
+
+
+<footer>
+	<p> Richard Chen, Copyright &copy; 2020 </p>
+</footer>
+
+
+
+	
 </body>
 
 </html>
