@@ -1,3 +1,4 @@
+
 /*ALL elements on your page will inherit this font-family then (unless, of course you override it later) */
 body{
 
@@ -52,6 +53,8 @@ ul{
 	padding-right:20px;
 /*Changes the color of contents*/
 	color:#ffffff;
+
+	float:right;
 }
 
 /* Header Top Banner, Have everything styled in header this way*/
@@ -60,7 +63,7 @@ header{
 	color:#000000 ;
 	padding-top:30px;
 /* If no content is filling the header, then have header have the size of 70 px at least*/
-	min-height:70px;
+	min-height:90px;
 	border-bottom:#234257 3px solid;
 }
 
@@ -80,8 +83,9 @@ header li{
 
 /*Order the list from left to right*/
 	float:left; 
-/* Display as an inline element, basically a <span> text box. Height & Width will have */
-	display:inline;
+/* Display as an inline element, basically a <span> text box. Height & Width will have. Will create unwanted indent */
+	/*display:inline;*/
+	list-style-type: none;
 /* Top Right Bottom Left */
 	padding:0 20px 0 20px;
 }
@@ -112,6 +116,31 @@ header .highlight, header .current a{
 header a:hover{
 	color:#cccccc;
 	font-weight:bold;
+	text-decoration: none;
+}
+
+
+/* Apply different style depending on media. Usually check viewport w/l, orientation, resolution
+*/
+@media screen and (max-width:727px) {
+	header ul {
+
+		float:left;
+		margin-top: 5px;
+		padding-left: -10 ; 
+		margin-left: -20;
+		padding: 0;
+
+	}
+
+	header li {
+		float:left;
+		padding:0 10px 0 0px;
+	}
+
+	header nav{
+		float:left;
+	}
 }
 
 /* Formatting first introductory section of page*/
@@ -184,6 +213,13 @@ header a:hover{
 #boxes .box img{
 	height: 90px;
 	width: auto;
+}
+
+#projectgrid  {
+
+margin-bottom: 60px;
+margin-top: 30px;
+
 }
 
 footer {

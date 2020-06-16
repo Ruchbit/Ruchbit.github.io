@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
 	<meta name="description" content="Richard Chen is an incoming physics student from UCL constantly on the prowl for computer science, business, life and science lessons ">
@@ -11,10 +11,11 @@
 
 	<title> Richard's Profile </title>
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 
 
-
+<body>
 
 <header>
 		<div class="container">
@@ -23,21 +24,14 @@
 			</div>
 			<nav> 
 				<u1>
-					<li class = "current"> <a href="index.html">Me</a></li>
-					<li> <a href="project.html">Projects</a></li>
-					<li> <a href="blog.html">Blog</a></li>
-					<li >  <a href="contact.html">Contact</a></li>
+					<li class = "current"> <a href="index.html">Me</a></li><li> <a href="project.html">Projects</a></li><li> <a href="blog.html">Blog</a></li><li >  <a href="contact.html">Contact</a></li>
 				</u1>
 
 			</nav>
 		</div>
-	</header>
+</header>
 
 
-
-
-
-<body>
 
 	<section id="introduction">
 		<div class = "container">
@@ -76,8 +70,10 @@
 		<div class = "container">
 			<h1>Contact me</h1>
 			<form>
-				<input type="email"  value="Enter Email...">
+				<input type="email" class="form-control"  placeholder ="Enter Email" aria-describedby="emailHelp">
+				<div align="right">
 				<button type = "submit" class="button_1">Contact</button>
+				</div>
 			</form>
 		</div>
 	</section>
