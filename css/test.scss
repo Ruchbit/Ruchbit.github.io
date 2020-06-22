@@ -1,0 +1,234 @@
+$main: red;
+$highlight:;
+$body:#f4f4f4 ;
+
+/*ALL elements on your page will inherit this font-family then (unless, of course you override it later) */
+body{
+
+/*	font-family: Arial, Helvetica, san-serif;
+	font-size:15px;
+	line-height: 1.5; is other method of writing */
+	font: 15px/1.5 Arial, Helvetica, san-serif;*/
+
+/*By default there is some padding, gets rid of padding lining the insideo page. (set to 0 to make adjust other parts of site)*/
+	padding:0;
+
+/*By default there is small margin, a border around the whole webpage*/
+	margin:0;
+
+/*Changes background color of whole page, the underlay.*/
+	background-color: $body;
+}
+
+/*Apply Globally to all class called container. You have selected the class called container*/
+.container{
+	
+/*Allows all containers to be responsive, taking up 80% of the screen at all times. Helps with adapting to resizing of the page*/
+	width:80%;	
+
+/*Automatically centres the container to take up as much as width allows. Then adjusts left and right margins*/
+	margin:auto;
+
+/*hidden, means the text will be kept in the boxes and clipped when needed.Auto does something similar but will add scroll bar when clipping occurs*/
+	overflow:hidden;
+}
+
+/* removes default unordered list padding */
+ul{
+	margin:0;
+	padding:0;
+}
+
+/*This can now be given to a button or related classes to have this formatting (contact me button)*/
+.button_1{
+
+/*Defines the height of the box*/
+	height:38px;
+
+/*Background of the box*/
+	background:#e8491d;
+
+/*This is removing the border of the box (could also be coloured)*/
+	border:0;
+
+/*Increases the distance between left edge of box and the contents of box */
+	padding-left: 20px;
+	padding-right:20px;
+/*Changes the color of contents*/
+	color:#ffffff;
+
+	float:right;
+}
+
+/* Header Top Banner, Have everything styled in header this way*/
+header{
+	background:	#79B7B4;
+	color:#000000 ;
+	padding-top:30px;
+/* If no content is filling the header, then have header have the size of 70 px at least*/
+	min-height:90px;
+	border-bottom:#234257 3px solid;
+}
+
+/*Formatting the actual navigation tags*/
+header a{
+	color:#000000;
+
+/*Removes the default underline that comes with hyperlinks, other: overline, line-through, underline, underline overline*/
+	text-decoration:none;
+/*Usually refers to capitalisation. Lowercase, capitalize, none. Also initia, inherit*/
+	text-transform: uppercase;
+	font-size:16px;
+}
+
+/* Formatting the list for header nav bar*/
+header li{
+
+/*Order the list from left to right*/
+	float:left; 
+/* Display as an inline element, basically a <span> text box. Height & Width will have. Will create unwanted indent */
+	/*display:inline;*/
+	list-style-type: none;
+/* Top Right Bottom Left */
+	padding:0 20px 0 20px;
+}
+
+/*Formatting the Richards Profile*/
+/*Making contents positioned left to right first*/
+header #branding{
+	float:left;
+}
+header #branding h2{
+	margin:0;
+}
+
+/*Formatting the navigation section/container.*/
+header nav{
+	float:right;
+	margin-top:5px;
+}
+
+/*styling the classes highlight for Richard and the highlighted chosen current page*/
+header .highlight, header .current a{
+	color:#e8491d;
+/* other are bolder, lighter, numerical 100 increments to 900. 700 being bold*/
+	font-weight:bold;
+}
+
+/*Hover selects other elements to be visible/used when user mouses over the element it is used on*/
+header a:hover{
+	color:#cccccc;
+	font-weight:bold;
+	text-decoration: none;
+}
+
+
+/* Apply different style depending on media. Usually check viewport w/l, orientation, resolution
+*/
+@media screen and (max-width:727px) {
+	header ul {
+
+		float:left;
+		margin-top: 5px;
+		padding-left: -10 ; 
+		margin-left: -20;
+		padding: 0;
+
+	}
+
+	header li {
+		float:left;
+		padding:0 10px 0 0px;
+	}
+
+	header nav{
+		float:left;
+	}
+}
+
+/* Formatting first introductory section of page*/
+#introduction{
+	
+/* Sets background to be repeated, from top left, horizontally and vertically*/
+	background-image: url('../img/test1.jpg');
+/* Removes the default of repeating image, :repeat-y would cause only vertical repeat, space(repeat as much as possible without clippling) round(stretch to fit space, repeated)*/
+	background-repeat: no-repeat;
+/* Alternatively, scroll default causes image to scroll with page. Local will scroll with element contents(?)*/
+	background-attachment: fixed;
+/* Default value would display image in original size, length or percentage + 2 values will set width and length, contain will resize to ensure image is fully visible, cover~contain bu will cut/stretch if needed */
+	background-size: cover;
+	background-position: center;
+	min-height: 400px;
+	width: 100%;
+	text-align:center;
+/* This sets the background to be x if image fails to load*/
+	color:#000000;
+}
+
+/*Formatting the actual title/text of introductory section*/
+#introduction h1{
+	margin-top:100px;
+	font-size:55px;
+	margin-bottom:10px;
+}
+
+#introduction p{
+	font-size:20px;
+}
+
+
+/* Contact me background*/
+#contact{
+	padding:15px;
+/* Contact me font colour*/
+	color:#ffffff;
+	background:#35424a;
+}
+
+#contact h1{
+	float:left;
+}
+
+/*Styling everything in form section (input bar and contact button)*/
+#contact form {
+	float:right;
+	margin-top:15px;
+}
+#contact input[type="emai"]{
+	padding: 4px;
+	height: 25px;
+	width: 250px;
+}
+
+
+
+#boxes{
+	margin-top:20px;
+}
+
+/*Format any classes, box, present in the id boxes*/
+#boxes .box{
+	float:left;
+	text-align: center;
+	width:30%;
+	padding:10px;
+}
+#boxes .box img{
+	height: 90px;
+	width: auto;
+}
+
+#projectgrid  {
+
+margin-bottom: 60px;
+margin-top: 30px;
+
+}
+
+footer {
+	padding:20px;
+	margin-top:20px;
+	color:#ffffff;
+	background-color:#e8491d;
+	text-align: center;
+}
