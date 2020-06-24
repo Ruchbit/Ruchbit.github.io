@@ -35,6 +35,11 @@
 	<!-- This links the current page with another piece of code to then have it's relationship to be defined as a style sheet. Mostly used to link CSS styling -->
 	<!-- <link rel="stylesheet" type="text/css" href=""> can be typed too but seems unneccassary since type by default is "text/css"  -->
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+
+<!-- Bootstrap linking CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
 </head>
 
 
@@ -104,6 +109,13 @@
 			</form>
 
 </section>
+
+<form action=”{{ url_for(‘book’) }}” method=”post”>
+	<div class=”form-group”>  >>mainly for organisational sake
+	     <select class= “form-control” name= “flight_id”>
+	</div>
+</form>
+
 
 
 
